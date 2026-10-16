@@ -1,0 +1,7 @@
+"measure","value","unit"
+"primary_valence_interval_duration_median","24.426528","hours"
+"primary_valence_interval_duration_q1","23.272222","hours"
+"primary_valence_interval_duration_q3","27.032430249999997","hours"
+"distinct_participants_all_intervals","1104","participants"
+"distinct_participants_linked_life_satisfaction_complete_before_48h","405","participants"
+"distinct_participants_with_any_linked_interval","419","participants"

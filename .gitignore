@@ -1,0 +1,14 @@
+*.gz
+*.rds
+*.RData
+*.rda
+data/
+raw/
+clean/
+**/gamewell_daily_intervals*
+*.xlsx
+node_modules/
+.Rhistory
+.Rproj.user/
+Thumbs.db
+.env
