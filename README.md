@@ -1,3 +1,51 @@
+# Start here
+
+| Audience | Start here |
+|---|---|
+| Teacher or reader | [TODO for author: add GitHub Pages URL], then browse plan/ and results/. |
+| Teammate making slides | See docs/ and viewer/exports/. |
+| Someone exploring the numbers | Run the data viewer using the quick start below. |
+| Someone checking the code | Read code/CODE_GUIDE.md. |
+
+## Quick start: run the data viewer
+
+Prerequisite: Python 3.11 or newer.
+
+### Windows PowerShell
+
+```powershell
+git clone <repo-url>
+cd gamewell-public
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+streamlit run viewer/app.py
+```
+
+You can use run_viewer.bat after installing requirements. The app should open a browser tab at http://localhost:8501.
+
+### macOS or Linux
+
+```sh
+git clone <repo-url>
+cd gamewell-public
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+streamlit run viewer/app.py
+```
+
+The app should open a browser tab at http://localhost:8501.
+
+### Troubleshooting
+
+- If Python is not found, install Python 3.11 or newer from the official Python distribution and make sure it is on PATH.
+- If port 8501 is in use, run `streamlit run viewer/app.py --server.port 8502` and open http://localhost:8502.
+
+## Make slide charts
+
+With the environment activated and requirements installed, run `python -m viewer.export_slide_charts`. PNG and SVG exports are written under viewer/exports/.
+
 # GameWell: recorded console play and daily well-being
 
 We examined whether, within the same person, a day with more recorded Xbox/Nintendo play than that person's usual was associated with a different mood (affective valence, 0-100) at the next survey. Per additional hour of recorded linked-console play above a person's own usual, later mood differed by 0.07 points (95% interval -0.14 to 0.29) on the 0-100 scale. The interval lies entirely within +/-0.5 points per hour, the smallest effect we pre-set as meaningful, so associations larger than that are not supported in this cohort. Life satisfaction (satisfaction with life that day, a separate measure) was analyzed the same way as a secondary analysis: the estimate was 0.16 points per hour (95% interval -0.04 to 0.35), also entirely within +/-0.5. It was not stress-tested like the primary analysis.

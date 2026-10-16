@@ -12,3 +12,8 @@ node_modules/
 .Rproj.user/
 Thumbs.db
 .env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+viewer/exports/
