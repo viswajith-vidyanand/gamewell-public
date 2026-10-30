@@ -1,0 +1,20 @@
+{
+  "data_source": "synthetic demo data (numbers are meaningless)",
+  "mode": "demo",
+  "n_intervals": 1045,
+  "n_participants": 142,
+  "boundary_solution_applied": false,
+  "b1_estimate": 0.34389694280560246,
+  "b1_wider_CI_lower": -0.009981509152355739,
+  "b1_wider_CI_upper": 0.6977753947635607,
+  "b1_category": "d",
+  "figures": [
+    "fig1_cohort_flow.png",
+    "fig2_exposure_distribution.png",
+    "fig3_exposure_within_distribution.png",
+    "fig4_b1_forest.png",
+    "fig5_residual_histogram.png",
+    "fig6_residual_qq.png",
+    "fig7_residuals_by_fitted.png"
+  ]
+}

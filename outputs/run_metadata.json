@@ -1,0 +1,20 @@
+{
+  "data_source": "E:\\Code\\ids\\digital-wellbeing-open-play-511bc60\\analysis\\gamewell_interval_dataset_2026-10-15\\gamewell_daily_intervals.csv.gz",
+  "mode": "real",
+  "n_intervals": 5076,
+  "n_participants": 371,
+  "boundary_solution_applied": true,
+  "b1_estimate": 0.07305918934111699,
+  "b1_wider_CI_lower": -0.14257850285913293,
+  "b1_wider_CI_upper": 0.2886968815413669,
+  "b1_category": "a",
+  "figures": [
+    "fig1_cohort_flow.png",
+    "fig2_exposure_distribution.png",
+    "fig3_exposure_within_distribution.png",
+    "fig4_b1_forest.png",
+    "fig5_residual_histogram.png",
+    "fig6_residual_qq.png",
+    "fig7_residuals_by_fitted.png"
+  ]
+}

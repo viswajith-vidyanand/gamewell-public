@@ -1,0 +1,2 @@
+model_fits,observations,participants,participants_with_exposure_variation,optimizer,converged,singular_fit,boundary_solution_applied,random_intercept_SD,residual_SD,ICC,raw_MixedLM_random_intercept_variance,raw_MixedLM_residual_variance,raw_MixedLM_rho,CR2_working_rho,min_intervals_per_participant,max_intervals_per_participant,convergence_warnings
+1,1045,142,140,statsmodels MixedLM (default),True,False,False,3.8762638532092217,8.102879708971134,0.18622996911378312,15.025421459696402,65.65665957805614,0.22884839948083835,0.22884839948083835,2,13,none

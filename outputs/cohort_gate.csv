@@ -1,0 +1,4 @@
+metric,observed,reference,difference,match
+eligible_intervals,5076,5076,0,True
+participants,371,371,0,True
+participants_with_exposure_variation,171,171,0,True
