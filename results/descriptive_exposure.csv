@@ -1,6 +1,0 @@
-measure,n,mean,sd,min,q05,q25,median,q75,q95,max,zero_count,zero_share,participants,intervals,spearman_rho
-"unique linked-console minutes per interval","5904","86.05785061009487","209.52938146750537","0","0","0","0","68.295833","501.2324999999992","2500","3905","0.6614159891598916","419","5904",""
-"unique linked-console minutes per interval hour","5904","2.664797303681849","5.7189501632625355","0","0","0","0","2.356693341394982","15.949736893623125","42.1662256054504","3905","0.6614159891598916","419","5904",""
-"participant-specific mean interval minutes; distribution across participants","419","93.71128831212492","207.82122964947402","0","0","0","1.3153846153846156","95.92847222916666","484.1324999999996","1558.066667","","","419","5904",""
-"participant-specific within-person SD interval minutes; distribution across participants with >=2 intervals","370","79.07848006699403","132.1064662783441","0","0","0","8.76091837692999","114.37459063912459","356.6208470195835","789.3053916594232","","","370","5904",""
-"exposure vs interval duration; Spearman rank correlation","5904","","","","","","","","","","","","419","","0.06420504019043183"

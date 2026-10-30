@@ -1,0 +1,26 @@
+variable,type,definition
+participant_id,string,Participant identifier carried unchanged from source tables.
+interval_sequence,integer,"Within-participant sequence of adjacent clean daily-survey response pairs, in clean wave order."
+prior_survey_wave,integer,Clean daily-survey wave for the earlier endpoint.
+later_survey_wave,integer,Clean daily-survey wave for the later endpoint.
+interval_start_utc,ISO-8601 UTC timestamp,Earlier clean survey completion time; source Z/explicit-offset timestamp parsed as an instant.
+interval_end_utc,ISO-8601 UTC timestamp,Later clean survey completion time.
+interval_duration_minutes,"numeric, minutes",Elapsed UTC time between endpoint timestamps.
+interval_duration_hours,"numeric, hours",Elapsed UTC time between endpoint timestamps.
+prior_affective_valence,numeric / missing,Earlier daily response to “How are you feeling right now?”; kept separate from life satisfaction.
+later_affective_valence,numeric / missing,Later daily response to “How are you feeling right now?”; primary outcome.
+prior_life_satisfaction,numeric / missing,Earlier daily “I was satisfied with my life today” response.
+later_life_satisfaction,numeric / missing,Later daily “I was satisfied with my life today” response.
+xbox_linked,boolean / missing,Whether intake linkage metadata lists Xbox; missing if intake row is absent.
+nintendo_linked,boolean / missing,Whether intake linkage metadata lists Nintendo; missing if intake row is absent.
+participant_linkage_status,category,"intake_missing, no_console_link, xbox_only, nintendo_only, or xbox_and_nintendo."
+timestamp_status,category,Valid or reason an interval could not be used for elapsed-time alignment.
+xbox_session_rows_in_interval,integer / missing,Count of existing cleaned Xbox session rows intersecting the half-open UTC interval; missing if not linked/unusable.
+nintendo_session_rows_in_interval,integer / missing,Count of existing cleaned Nintendo session rows intersecting the half-open UTC interval; missing if not linked/unusable.
+xbox_gaming_minutes,numeric / missing,Union duration of clipped cleaned Xbox sessions; zero means no row under documented linked-coverage assumption; missing if not linked/unusable.
+nintendo_gaming_minutes,numeric / missing,Union duration of clipped cleaned Nintendo sessions; Nintendo source includes first-party titles only; missing if not linked/unusable.
+recorded_linked_console_minutes_unique,numeric / missing,Union duration across linked Xbox/Nintendo sessions; simultaneous minutes count once.
+concurrent_minutes_removed,numeric / missing,Sum of platform-specific union minutes minus the combined union; minutes removed from the combined exposure to avoid double-counting.
+recorded_linked_console_minutes_per_24h,numeric / missing,Unique linked-console minutes divided by actual interval hours and scaled to 24 hours; descriptive normalization.
+telemetry_status,category,"Recorded sessions, no recorded sessions, no linkage, invalid timestamp, missing intake, or unusable cleaned session timestamp."
+telemetry_coverage_basis,text,Documents the source maximal-coverage-on-linkage assumption and absence of interval-level capture status.

@@ -1,8 +1,0 @@
-import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';
-const dir=path.join(process.cwd(),'analysis','gamewell_analysis_plan_2026-10-15');
-const add=path.join(dir,'ADDENDUM_7_2026-10-16.md');const man=path.join(dir,'MANIFEST_SHA256_addendum7.csv');
-if(fs.existsSync(add)||fs.existsSync(man))throw new Error('Addendum 7 target exists; refusing overwrite.');
-const content=`# Addendum 7 to Analysis Plan v1 (2026-10-16)
-Presentation corrections to the results bundle only; no analysis, estimate, interval or category changes. (1) Fixed scale and threshold constants in claims C1, C2 are written as 0-100 and +/-0.5 (the two-decimal rounding applies to estimates and intervals only). (2) Claim C6 is reworded to state that the life-satisfaction interval lies within +/-0.5. (3) Two sentences in METHODS_AND_LIMITATIONS.md were corrected: the primary-cohort median interval duration is now available (Addendum 6), and participant-level data were read for the Addendum 6 descriptive aggregates.
-`;
-fs.writeFileSync(add,content,'utf8');const b=fs.readFileSync(add);const q=x=>'"'+String(x).replaceAll('"','""')+'"';const row=['ADDENDUM_7_2026-10-16.md',b.length,crypto.createHash('sha256').update(b).digest('hex')];fs.writeFileSync(man,['path,bytes,sha256',row.map(q).join(',')].join('\n')+'\n','utf8');console.log(JSON.stringify({created:['ADDENDUM_7_2026-10-16.md','MANIFEST_SHA256_addendum7.csv'],bytes:b.length,sha256:row[2]}));

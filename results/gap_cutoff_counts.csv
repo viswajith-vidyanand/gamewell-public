@@ -1,6 +1,0 @@
-maximum_interval_length,eligible_intervals,participants,participants_at_least_2_intervals,participants_at_least_5_intervals,participants_with_both_zero_and_positive_exposure,participants_with_any_exposure_variation
-30_hours,4301,347,293,251,130,163
-36_hours,4544,357,297,254,132,166
-48_hours,5076,371,304,267,140,171
-72_hours,5568,383,316,271,145,179
-no_cutoff,5774,406,344,274,160,200
