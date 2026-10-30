@@ -1,6 +1,6 @@
 Python: 3.14.6
 Platform: Windows-11-10.0.26200-SP0
-Command: code\gamewell_analysis.py --data E:\Code\ids\digital-wellbeing-open-play-511bc60\analysis\gamewell_interval_dataset_2026-10-15\gamewell_daily_intervals.csv.gz --out outputs
+Command: E:\Code\ids\gamewell-public\code\gamewell_analysis.py --data E:\Code\ids\digital-wellbeing-open-play-511bc60\analysis\gamewell_interval_dataset_2026-10-15\gamewell_daily_intervals.csv.gz --out E:\Code\ids\gamewell-public\outputs
 Data source: E:\Code\ids\digital-wellbeing-open-play-511bc60\analysis\gamewell_interval_dataset_2026-10-15\gamewell_daily_intervals.csv.gz
 
 Package versions:
